@@ -55,7 +55,7 @@ function M.load(theme)
         vim.cmd("hi clear")
     end
 
-    vim.g.colors_name = "kanagawa"
+    vim.g.colors_name = "kanagawa-" .. theme
     vim.o.termguicolors = true
 
     if M.config.compile then
